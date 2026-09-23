@@ -1,5 +1,5 @@
 # Odoo.sh Masterclass — Exercises
-
+ 
 ## Source
 
 - Odoo.sh documentation https://www.odoo.com/documentation/master/administration/odoo_sh.html
