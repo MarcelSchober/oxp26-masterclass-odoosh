@@ -9,6 +9,13 @@ class ConferenceSession(models.Model):
     name = fields.Char(string='Title', required=True)
     speaker = fields.Char(string='Speaker')           # ← will be renamed 'presenter' in v19
     duration = fields.Integer(string='Duration (min)')  # ← will become Float (hours) in v19
+
+     presenter_id = fields.Many2one(
+        'res.partner',
+        string='Presenter',
+    )
+    duration = fields.Float(string='Duration (h)')
+    
     duration_in_hours = fields.Float(
         string='Duration (h)',
         compute='_compute_duration_in_hours',
