@@ -4,7 +4,7 @@ def migrate(cr, version):
         ADD COLUMN presenter_id integer
     """)
 
-  cr.execute("""
+    cr.execute("""
         UPDATE conference_session AS session
         SET presenter_id = partner.id
         FROM res_partner AS partner
