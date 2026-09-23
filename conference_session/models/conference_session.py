@@ -21,9 +21,9 @@ class ConferenceSession(models.Model):
 
     def _compute_room_session_count(self):
         counts_data = self.env['conference.session']._read_group(
-            [('room', 'in', self.room.ids)],
-            ['room'],
-            ['__count'],
+                [],
+                ['room'],
+                ['__count'],
         )
         counts = dict(counts_data)
         
