@@ -30,6 +30,6 @@ class TestConferenceSession(TransactionCase):
 
     def test_duration_updates_when_changed(self):
         """Changing duration recomputes duration_in_hours."""
-        session = self.Session.create({'name': 'Workshop', 'duration': 60})
+        session = self.Session.create({'name': 'Workshop', 'duration': 120})
         session.duration = 120
         self.assertAlmostEqual(session.duration_in_hours, 2.0)
