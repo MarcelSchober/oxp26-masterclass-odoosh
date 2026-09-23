@@ -8,7 +8,7 @@
             <list string="Sessions">
                 <field name="date"/>
                 <field name="name"/>
-                <field name="speaker"/>
+                <field name="presenter_id"/>
                 <field name="duration"/>
                 <field name="room"/>
             </list>
@@ -24,7 +24,7 @@
                     <group>
                         <group>
                             <field name="name"/>
-                            <field name="speaker"/>
+                            <field name="presenter_id"/>
                             <field name="date"/>
                         </group>
                         <group>
